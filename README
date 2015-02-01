@@ -1,0 +1,15 @@
+This is the implementation of a q-gram based index for patterns of limited length.
+For a text T of length n, 
+this index requires (n/k+sigma^q)log(n/k)+O(sigma^q log sigma) bits,
+where sigma is the alphabet size, and q and k are parameters.
+The pattern length must be less than or equal to q-k+1.
+After we construct this index for T,
+we can add any characters to the end of T.
+
+To build: make
+
+It generates the library in the file "sdci.a"
+
+To use: To use the library, please compile your main program along with
+the file "sdci.a". See for example the case of file "example.cpp" in 
+"makefile".
