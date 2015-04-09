@@ -1,0 +1,1 @@
+This is an implementation of q-gram based index for patterns of limited length.
